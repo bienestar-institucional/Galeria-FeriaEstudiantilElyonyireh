@@ -1,0 +1,404 @@
+
+
+
+
+/* TODO EL CSS */
+
+
+body {
+    
+    font-family: 'Poppins', cursive;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+   
+}
+
+h1 {
+
+
+    font-family: 'Lucida Handwriting', cursive; 
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    padding: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.linea {
+
+    border-radius: 50px; /* Elimina el borde predeterminado */
+    border-top: 2px solid #2a80b9; /* Establece el grosor y color de la línea */
+    width: 100%; /* Ancho de la línea */
+    display: block;
+}
+
+
+
+.bienestar {
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 3px solid #00d4ff;       ;
+    overflow: hidden; 
+   
+}
+
+/* Estilo para la galería de imágenes */
+.gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Imágenes ocultas que se animarán */
+.image {
+
+    display: block;
+    opacity: 0;
+    transform: translateX(-100px); /* Inicia desde la izquierda */
+
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.image.visible {
+
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Scroll suave para toda la página */
+html {
+
+    scroll-behavior: smooth;
+}
+
+/* Estilo básico para las imágenes */
+.image img {
+
+    width: 300px;
+    height: auto;
+    border-radius: 50px;
+    margin-top: 150px;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+    border: 3px solid #00d4ff;
+}
+
+
+
+
+/* Estilo de hover para imágenes */ 
+
+.image:hover img {
+
+    transform: scale(1.1);
+}
+
+
+
+
+.image {
+
+    text-align: center;
+}
+
+.boton {
+
+    font-family: cursive;
+    font-weight: bold; /* Negrita */
+    display: block; /* Se muestra como bloque */
+    margin-top: 25px; /* Espaciado superior */  
+    text-decoration: none; /* Sin subrayado */
+    color: white; /* Color del texto */
+    background-color: #007bff; /* Color de fondo */
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 50px; /* Bordes redondeados */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.boton:hover {
+
+    background-color: #000000; /* Color de fondo al pasar el mouse */
+    transform: translateY(-3px); /* Levanta el botón al pasar el mouse */
+   border: 2px solid #ffffff;
+}
+
+
+
+
+.mensaje {
+
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 226px;
+    margin: 0 auto;
+    display: none; /* Se oculta por defecto */
+    background-color: #4caf50; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 10px 10px; /* Espaciado interior */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-top: 10px; /* Margen superior */
+    font-size: 20px; /* Tamaño de fuente */
+    text-align: center; /* Centrar texto */
+    animation: fadeIn 0.5s, moveUpDown 3s ease-in-out infinite; /* Animaciones de entrada */
+}
+
+.mensaje.show {
+
+    display: block;
+    animation: fadeIn 1s ease-in-out, moveUpDown 1s ease-in-out infinite; /* Animaciones cuando se muestra */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Comienza invisible */
+    }
+    to {
+        opacity: 1; /* Termina completamente visible */
+    }
+}
+
+/* Animación de movimiento hacia arriba y abajo */
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Comienza en su posición original */
+    }
+    50% {
+        transform: translateY(-10px); /* Se mueve hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Regresa a su posición original */
+    }
+}
+
+
+
+
+
+
+
+.header {
+
+    background: linear-gradient(135deg, #000000, #000000);
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #00d4ff;  
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.header-logo {
+
+    filter: brightness(1.4);
+    width: 150px;
+    height: auto;
+    margin: 0 2px; /* Ajuste de margen común */
+}
+
+.header-title {
+
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0 10px;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+/* CSS CAMBIAR TEMA */
+
+
+
+
+
+/* Modo oscuro (pantalla negra) */
+body.dark-mode {
+    background-color: #000000; /* Fondo de la página en negro */
+    color: white; /* Texto de la página en blanco */
+}
+
+/* Botón en modo oscuro (cuando la pantalla es negra, el botón es blanco con texto negro) */
+body.dark-mode #toggleTheme {
+    background-color: #ffffff; /* Fondo del botón en blanco */
+    color: black; /* Texto del botón en negro */
+}
+
+/* Hover en modo oscuro */
+body.dark-mode #toggleTheme:hover {
+    background-color: #f0f0f0; /* Un tono más claro en hover */
+    color: black;
+}
+
+/* Modo claro (pantalla blanca) */
+#toggleTheme {
+    font-family: 'Poppins', cursive;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 15px;
+    background-color: #000000; /* Fondo del botón en negro por defecto */
+    color: white; /* Texto blanco por defecto */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect para modo claro */
+#toggleTheme:hover {
+    background-color: #333333; /* Un tono más claro del negro en hover */
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Active state */
+#toggleTheme:active {
+    transform: translateY(1px);
+    box-shadow: 0 3px 6px rgb(0, 0, 0);
+}
+
+/* Focus state */
+#toggleTheme:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para móviles y tablets */
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+    .gallery {
+
+        flex-direction: column;
+        align-items: center;
+        gap: 1px; /* Espaciado más pequeño entre imágenes */
+    }
+
+  
+
+
+    .linea {
+
+        border: 0; /* Elimina el borde predeterminado */
+        border-top: 2px solid #2a80b9; /* Establece el grosor y color de la línea */
+        width: 80%; /* Ancho de la línea */
+        margin-top: 130px;
+        display: block;
+        box-shadow: 2px 0 2px;
+    }
+    
+
+
+    .image img {
+
+        width: 90%; /* Tamaño responsivo para móviles */
+        margin-bottom: 20px;
+    }
+
+
+    .bienestar {
+
+
+max-width: 400px;
+
+
+    }
+
+    .header {
+
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Alinea el contenido al centro */
+        padding: 20px;
+    }
+
+    .header-title {
+
+        font-size: 20px;
+        font-family: monospace;
+        border-radius: 20px;
+        text-align: center; /* Alinea el texto al centro */
+        margin: 20px 0; /* Ajusta el margen para espacio */
+    }
+
+    .header-logo {
+
+        width: 100px; /* Ajusta el tamaño de los logos para móviles */
+    }
+
+
+    .boton{
+
+
+   width: 120px;
+   text-align: center;
+   margin: 0 auto;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+
+
+
+    }
+
+
+
+    #toggleTheme {
+
+
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+
+}
