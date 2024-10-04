@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria De La Feria Elyonyireh & Bienestar</title>
+    <title>Galeria De La Feria Bienestar & Elyonyireh</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -24,16 +24,21 @@
     <div class="header">
    
         <a class="paginasweb" href="https://elyonyireh.edu.co/" target="_blank">
-            <img src="https://i.ibb.co/j3ZGz30/Elyonyireh.png" alt="ELYONYIREH" class="header-logo"> 
+             <img src="https://i.ibb.co/j3ZGz30/Elyonyireh.png" alt="ELYONYIREH" class="header-logo"> 
         </a>
 
+        
 
         <h1 class="header-title">
-            GALERIA DE FOTOS DE LA FERIA ESTUDIANTIL
+            GALERIA DE FOTOS DE LA FERIA ESTUDIANTIL DE BIENESTAR <i class="fas fa-camera"></i> <i class="fas fa-images"></i>
         </h1>
+        
+
+
+
 
         <a class="paginasweb" href="https://beacons.ai/bienestar.joven" target="_blank"> 
-            <img src="https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097" alt="BIENESTAR" class="header-logo">
+             <img src="https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097" alt="BIENESTAR" class="header-logo">
         </a>
 
 
@@ -66,138 +71,785 @@
 
 
 
- <!--PRIMERA IMG  -->
 
 
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/ft0cyjc/20241001-120130.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/ft0cyjc/20241001-120130.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje1">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
+<!-- MODAL PARA LAS GRANDES -->
 
 
 
+<div id="imageModal" class="modal">
+    <div class="modal-header">
+        <span class="close" onclick="closeModal()">&times;</span> 
+        <img class="logo2" src="https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097" style="width: 80px;" alt="BIENESTAR">
+    </div>
 
- <!--SEGUNDA IMG  -->
+    <img class="modal-content" id="largeImage" alt="Imagen en grande">
+    <div class="cerrar-boton" onclick="closeModal()">CERRAR VENTANA <i class="fas fa-ban"></i></div>
+</div>
+
+
+
+
+
+
+
+
+<!--FOTOS BIENESTAR-->
+
+
+
+
+
+
+
+
+ <!-- 1 -->
+
+
+ <div class="image" data-aos="fade-up">
+
+    <img src="https://i.ibb.co/5W8VFkt/Picsart-24-10-02-13-10-15-941.png" alt="img 1" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/5W8VFkt/Picsart-24-10-02-13-10-15-941.png')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/5W8VFkt/Picsart-24-10-02-13-10-15-941.png">Descargar</button></a><br>
+    
+    <div class="mensaje mensaje1">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 2 -->
+
+
+<div class="image" data-aos="fade-up">
+     <img src="https://i.ibb.co/3yYg557/Picsart-24-10-02-13-09-30-510.png" alt= "img 2" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/3yYg557/Picsart-24-10-02-13-09-30-510.png')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/3yYg557/Picsart-24-10-02-13-09-30-510.png">Descargar</button></a><br>
+    
+    <div class="mensaje mensaje2">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+        
+
+
+ <!--3-->
+
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/SX34f6H/Picsart-24-10-02-09-23-46-572.png" alt= 3" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/SX34f6H/Picsart-24-10-02-09-23-46-572.png')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/SX34f6H/Picsart-24-10-02-09-23-46-572.png">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje3">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+ <!--4-->
+
+
+         
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/wWPM40K/Picsart-24-10-02-09-14-22-098.png" alt= 4" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/wWPM40K/Picsart-24-10-02-09-14-22-098.png')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/wWPM40K/Picsart-24-10-02-09-14-22-098.png">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje4">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+ <!--5-->
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/w6CfpHc/Picsart-24-10-02-09-11-15-590.png" alt= "img 5" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/w6CfpHc/Picsart-24-10-02-09-11-15-590.png')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/w6CfpHc/Picsart-24-10-02-09-11-15-590.png">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje5">DESCARGA EXITOSA<i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+ <!--6-->
+
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097" alt= "img 6" width="300" class="thumbnail" onclick="openModal('https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://cdn.beacons.ai/user_content/FLU9R0qbNaNWEw29rLMhpGPpocx2/profile_bienestar.joven.png?t=1712169743097">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje6">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+ <!--7-->
+
+
+         
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/XynnsgY/IMG-20241003-WA0197.jpg" alt= "img 7" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/XynnsgY/IMG-20241003-WA0197.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/XynnsgY/IMG-20241003-WA0197.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje7">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+ <!--8-->
+
+
 
           
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/kxgM4Pw/20241001-095655.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/kxgM4Pw/20241001-095655.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje2">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/ft1Y6yz/IMG-20241003-WA0169.jpg" alt= "img 8" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/ft1Y6yz/IMG-20241003-WA0169.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/ft1Y6yz/IMG-20241003-WA0169.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje8">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
 
 
 
- <!--TERCERA IMG  -->
-
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/34SfnJ9/20241001-104527.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/34SfnJ9/20241001-104527.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje3">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
 
 
 
- <!--CUARTA IMG  -->
 
-
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/dmDJFmw/20241001-104011.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/dmDJFmw/20241001-104011.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje4">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
+ <!--9-->
 
             
-
- <!--QUINTA IMG  -->
-
-
-
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/wCjqMy7/20241001-101922.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/wCjqMy7/20241001-101922.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje5">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
-
-            
-
- <!--SEXTA IMG  -->
-
-
-
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/vsQyKPV/20241001-100326.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/vsQyKPV/20241001-100326.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje6">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
-
-
-
-
- <!--SEPTIMA IMG  -->
-
-
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/cgFgD1c/20241001-095637.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/cgFgD1c/20241001-095637.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje7">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
-
-
-
-
- <!--OCTAVA IMG  -->
-
-
-
-           
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/mNqfdmd/20241001-110858.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/mNqfdmd/20241001-110858.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje8">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
+        
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/6HP10Hn/IMG-20241003-WA0173.jpg" alt= "img 9" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/6HP10Hn/IMG-20241003-WA0173.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/6HP10Hn/IMG-20241003-WA0173.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje9">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
 
 
 
 
 
- <!--NOVENA IMG  -->
+
+ <!--10-->
+
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img  src="https://i.ibb.co/XynnsgY/IMG-20241003-WA0197.jpg" alt= "img 10" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/XynnsgY/IMG-20241003-WA0197.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/XynnsgY/IMG-20241003-WA0197.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje10">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+ <!--11-->
 
             
-          
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/1qDXJYg/20241001-104352.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/1qDXJYg/20241001-104352.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje9">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/jzW1Q4F/IMG-20241003-WA0164.jpg" alt= "img 11" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/jzW1Q4F/IMG-20241003-WA0164.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/jzW1Q4F/IMG-20241003-WA0164.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje11">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
 
 
 
 
- <!--DECIMA IMG  -->
 
 
 
-            <div class="image" data-aos="fade-up">
-                <img src="https://i.ibb.co/bdsV1w5/20241001-101133.jpg" alt="Foto 2" width="300">
-                <a button class="boton" data-image-url="https://i.ibb.co/bdsV1w5/20241001-101133.jpg">Descargar</button></a><br>
-                <div class="mensaje mensaje10">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
-                <hr class="linea">
-            </div>
+ <!--12-->
+
+            
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/XXXHD9C/IMG-20241003-WA0133.jpg" alt= " img 12" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/XXXHD9C/IMG-20241003-WA0133.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/XXXHD9C/IMG-20241003-WA0133.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje12">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+
+ <!--13-->
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/PtHhJWG/IMG-20241003-WA0199.jpg" alt= "img 13" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/PtHhJWG/IMG-20241003-WA0199.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/PtHhJWG/IMG-20241003-WA0199.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje13">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+ <!--14-->
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/3Bm0VWG/IMG-20241003-WA0192.jpg" alt= " img 14" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/3Bm0VWG/IMG-20241003-WA0192.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/3Bm0VWG/IMG-20241003-WA0192.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje14">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+ <!--15-->
+            
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/bdsV1w5/20241001-101133.jpg" alt= 15" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/bdsV1w5/20241001-101133.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/bdsV1w5/20241001-101133.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje15">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+ <!--16-->
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/xzwxrsG/IMG-20241003-WA0118.jpg" alt= "img 16" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/xzwxrsG/IMG-20241003-WA0118.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/xzwxrsG/IMG-20241003-WA0118.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje16">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--17-->
+
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/zHnJ51t/IMG-20241003-WA0137.jpg" alt= " img 17" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/zHnJ51t/IMG-20241003-WA0137.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/zHnJ51t/IMG-20241003-WA0137.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje17">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ <!--18-->
+
+            
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/wCjqMy7/20241001-101922.jpg" alt= 18" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/wCjqMy7/20241001-101922.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/wCjqMy7/20241001-101922.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje18">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--19-->
+
+            
+  <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/mNqfdmd/20241001-110858.jpg" alt= 19" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/mNqfdmd/20241001-110858.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/mNqfdmd/20241001-110858.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje19">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--20-->
+
+            
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/rQ6WcrC/IMG-20241003-WA0047.jpg" alt= "img 20" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/rQ6WcrC/IMG-20241003-WA0047.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/rQ6WcrC/IMG-20241003-WA0047.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje20">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--21-->
+
+
+
+            
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/vsQyKPV/20241001-100326.jpg" alt= " img 21" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/vsQyKPV/20241001-100326.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/vsQyKPV/20241001-100326.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje21">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+ <!--22-->
+
+
+
+
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/QPDx3Y3/IMG-20241003-WA0051.jpg" alt= " img 22" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/QPDx3Y3/IMG-20241003-WA0051.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/QPDx3Y3/IMG-20241003-WA0051.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje22">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--23-->
+
+            
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/R65jhYx/IMG-20241003-WA0054.jpg" alt= "img 23" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/R65jhYx/IMG-20241003-WA0054.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/R65jhYx/IMG-20241003-WA0054.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje23">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--24-->
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/Bz2rkFc/IMG-20241003-WA0075.jpg" alt= "img 24" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/Bz2rkFc/IMG-20241003-WA0075.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/Bz2rkFc/IMG-20241003-WA0075.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje24">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--25-->
+
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/bW52s1P/IMG-20241003-WA0002.jpg" alt= "img 25" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/bW52s1P/IMG-20241003-WA0002.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/bW52s1P/IMG-20241003-WA0002.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje25">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+ <!--26-->
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/8Mjyjg0-20241003-WA0022.jpg" alt= 26" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/8Mjyjg0-20241003-WA0022.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/8Mjyjg0-20241003-WA0022.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje26">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
+
+
+
+  <!--27-->
+            
+  <div class="image" data-aos="fade-up">
+
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/hMH6LkT-20241003-WA0019.jpg" alt= 27" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/hMH6LkT-20241003-WA0019.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/hMH6LkT-20241003-WA0019.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje27">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+ <!--28-->
+
+
+ <div class="image" data-aos="fade-up">
+
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/6gjLYrp-20241003-WA0037.jpg" alt= 28" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/6gjLYrp-20241003-WA0037.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/6gjLYrp-20241003-WA0037.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje28">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+
+  <!--29-->
+
+
+  <div class="image" data-aos="fade-up">
+
+    <!-- Miniatura de la imagen -->
+    <img src="https://i.ibb.co/WphHbqm-20241003-WA0045.jpg" alt= "29" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/WphHbqm-20241003-WA0045.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/WphHbqm-20241003-WA0045.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje29">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+
+</div>
+
+
+
+
+
+
+
+ <!--30-->
+
+ <div class="image" data-aos="fade-up">
+    <!-- Miniatura de la imagen -->
+     <img src="https://i.ibb.co/gTgVNTZ-20241003-WA0049.jpg" alt= 30" width="300" class="thumbnail" onclick="openModal('https://i.ibb.co/gTgVNTZ-20241003-WA0049.jpg')">
+    
+    <!-- Botón de descarga -->
+    <a button class="boton" data-image-url="https://i.ibb.co/gTgVNTZ-20241003-WA0049.jpg">Descargar</button></a><br>
+    
+    <!-- Mensaje de descarga exitosa -->
+    <div class="mensaje mensaje30">DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i></div>
+    <hr class="linea">
+</div>
+
+
+
+
+
         </div>
     </div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -246,35 +898,77 @@
 
 
 
-        // DESCARGA IMG PNG//
+        // DESCARGA PNG//
 
 
 
-        const downloadButtons = document.querySelectorAll('.boton');
-        downloadButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const imageUrl = this.getAttribute('data-image-url'); 
-                const fileName = imageUrl.substring(imageUrl.lastIndexOf('/') + 1); 
 
-                fetch(imageUrl)
-                    .then(response => response.blob())
-                    .then(blob => {
-                        const url = window.URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = fileName; 
-                        document.body.appendChild(a);
-                        a.click();
-                        a.remove();
-                        window.URL.revokeObjectURL(url);
-                    });
+
+
+
+
+
+
+
+
+
+
+// Mostrar la imagen en grande cuando se hace clic en la imagen
+function openModal(imgSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("largeImage");
+
+    modal.style.display = "block"; // Muestra el modal
+    modalImg.src = imgSrc; // Usa la imagen que se pasó al hacer clic
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none"; // Cierra el modal
+}
+
+// Descargar imagen cuando se hace clic en el botón de "Descargar"
+const downloadButtons = document.querySelectorAll('.boton');
+downloadButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault(); // Evita que el botón abra la imagen en grande
+        const imageUrl = this.getAttribute('data-image-url');
+        const fileName = imageUrl.substring(imageUrl.lastIndexOf('/') + 1);
+
+        fetch(imageUrl)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = fileName;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                window.URL.revokeObjectURL(url);
             });
-        });
-
+    });
+});
 
 
 
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -318,50 +1012,6 @@ botones.forEach((boton, index) => {
 
 
 
-
-
-
-
-
-
-
-
-<!-- CSS DE EL DARK Y LIGHT MODE -->
-
-
-<style>
-
-    /* Por defecto, se ocultan ambos textos */
-    .light-mode, .dark-mode {
-        display: none;
-    }
-
-    /* Modo claro: texto negro sobre fondo blanco */
-    @media (prefers-color-scheme: light) {
-        .light-mode {
-            display: block;
-            color: rgb(0, 0, 0); /* Texto negro */
-            font-weight: bold;
-            font-size: 12px;
-        }
-        .dark-mode {
-            display: none;
-        }
-    }
-
-    /* Modo oscuro: texto blanco sobre fondo negro */
-    @media (prefers-color-scheme: dark) {
-        .dark-mode {
-            display: block;
-            color: none;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        .light-mode {
-            display: none;
-        }
-    }
-</style>
 
 
 
