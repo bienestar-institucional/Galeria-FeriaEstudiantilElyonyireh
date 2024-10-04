@@ -5,16 +5,25 @@
 /* TODO EL CSS */
 
 
+
+
+
+
 body {
-    
+
+    text-align: center;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Poppins', cursive;
     background-color: #f0f0f5;
     color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-   
+ 
 }
+
+
+  
 
 h1 {
 
@@ -118,27 +127,53 @@ html {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
 .boton {
 
     font-family: cursive;
-    font-weight: bold; /* Negrita */
+    font-style: italic;
     display: block; /* Se muestra como bloque */
-    margin-top: 25px; /* Espaciado superior */  
-    text-decoration: none; /* Sin subrayado */
-    color: white; /* Color del texto */
-    background-color: #007bff; /* Color de fondo */
+    margin-top: 30px; /* Espaciado superior */ 
     padding: 10px 15px; /* Espaciado interno */
-    border-radius: 50px; /* Bordes redondeados */
-    text-transform: uppercase; /* Texto en mayúsculas */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    background: linear-gradient(to left,  #007bff 50%, black 50%);
+    background-size: 200% 200%; /* Cambio aquí */
+    background-position: right bottom; /* Cambio aquí */
+    filter: brightness(100%);
+    color: white;
+    text-shadow: 8px 8px 18px rgba(0, 0, 0, 8);
+    font-weight: bold;
+    box-shadow: 0 0 20px #000000;
+    text-align: center;
+    transition: all 0.6s;
+    border: 1px solid #007bff;
+    border-radius: 50px;
+    font-size: 18px;
+   cursor: pointer;
+
+  
 }
 
 .boton:hover {
 
-    background-color: #000000; /* Color de fondo al pasar el mouse */
-    transform: translateY(-3px); /* Levanta el botón al pasar el mouse */
-   border: 2px solid #ffffff;
+    
+    color: rgb(255, 255, 255);
+    text-shadow: 8px 8px 18px rgba(0, 0, 0, 8);
+   border: 1px solid #000000;
+   filter: brightness(100%);
+   font-weight: bold;
+  background-position: left bottom; /* Cambio aquí */
+  transform: scale(1.1);
+
+
+
+
 }
 
 
@@ -199,14 +234,16 @@ html {
 
 .header {
 
-    background: linear-gradient(135deg, #000000, #000000);
+    background-image: linear-gradient(rgba(77, 77, 77, 0.3), rgba(77, 77, 77, 0.3)), url("https://i.ibb.co/fFpdhpv/pxfuel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cubre toda el área */
     padding: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 3px solid #00d4ff;  
     border-radius: 50px;
-    margin-bottom: 20px;
+  
 }
 
 .header-logo {
@@ -261,6 +298,7 @@ body.dark-mode #toggleTheme:hover {
 /* Modo claro (pantalla blanca) */
 #toggleTheme {
     font-family: 'Poppins', cursive;
+    font-style: italic;
     font-weight: bold;
     font-size: 15px;
     padding: 8px 15px;
@@ -292,6 +330,158 @@ body.dark-mode #toggleTheme:hover {
     outline: none;
     box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.3);
 }
+
+
+
+
+
+
+
+
+
+
+    /* Por defecto, se ocultan ambos textos */
+    .light-mode, .dark-mode {
+        display: none;
+    }
+
+    /* Modo claro: texto negro sobre fondo blanco */
+    @media (prefers-color-scheme: light) {
+        .light-mode {
+            display: block;
+            color: rgb(0, 0, 0); /* Texto negro */
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .dark-mode {
+            display: none;
+        }
+    }
+
+    /* Modo oscuro: texto blanco sobre fondo negro */
+    @media (prefers-color-scheme: dark) {
+        .dark-mode {
+            display: block;
+            color: none;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .light-mode {
+            display: none;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOSTRAR LAS IMAGENES EN GRANDE */
+
+
+.image img.thumbnail {
+
+    cursor: pointer; /* Cambia el cursor a pointer cuando pase sobre la imagen */
+}
+
+
+/* Estilo del modal */
+.modal {
+
+    display: none; /* Por defecto oculto */
+    position: fixed; /* Fijo en la pantalla */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Desplazamiento si es necesario */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+}
+
+
+
+/* Estilo de la imagen en el modal */
+.modal-content-container {
+
+    display: flex; /* Usa flexbox para alinear horizontalmente */
+    align-items: center; /* Alinea verticalmente en el centro */
+    margin-top: 20px; /* Añade margen superior si es necesario */
+}
+
+/* Encabezado del modal */
+.modal-header {
+
+    display: flex; /* Usa flexbox para la alineación */
+    justify-content: space-between; /* Espacia el contenido */
+}
+
+.modal-content {
+
+    border: 3px solid #00d4ff;  
+    border-radius: 50px;
+    max-width: 80%; /* Limita el ancho máximo de la imagen */
+    max-height: 80%; /* Limita la altura máxima de la imagen */
+    margin: auto; /* Centra la imagen */
+}
+
+
+
+
+
+
+/* Botón "CERRAR" */
+.cerrar-boton {
+
+    background-color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding: 10px 0 10px;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cerrar-boton:hover {
+
+    background-color: rgb(112, 0, 0);
+    font-weight: bold;
+    color: #ffffff; /* Cambia el color cuando pasas el cursor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -360,12 +550,13 @@ max-width: 400px;
 
         flex-direction: column; /* Cambia la dirección del flex a columna */
         align-items: center; /* Alinea el contenido al centro */
-        padding: 20px;
+        padding: 50px;
     }
 
     .header-title {
 
         font-size: 20px;
+        width: 380px;
         font-family: monospace;
         border-radius: 20px;
         text-align: center; /* Alinea el texto al centro */
@@ -384,6 +575,7 @@ max-width: 400px;
    width: 120px;
    text-align: center;
    margin: 0 auto;
+   margin-top: 25px;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 
@@ -400,5 +592,33 @@ max-width: 400px;
 
     }
 
+    .modal-content {
 
-}
+        max-width: 90%;
+        max-height: 90%;
+        margin-top: 100px;
+
+    }
+
+    .modal-header {
+
+ display: block;
+
+    }
+
+
+
+ .logo2 {
+
+margin-top: 100px;
+
+
+ }
+
+    }
+
+
+
+
+
+
